@@ -17,7 +17,26 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun AppTextField(
+fun FormVelox(){
+    Column {
+        TextTitleField()
+        Row {
+            FormField(text = "", placeholder = "")
+        }
+        TextTitleField()
+        Row{
+            FormField(text = "", placeholder = "")
+        }
+    }
+}
+
+@Composable
+fun TextTitleField(){
+    Text("This is a title")
+}
+
+@Composable
+fun FormField(
     modifier: Modifier = Modifier,
     text: String,
     placeholder: String,
@@ -28,11 +47,6 @@ fun AppTextField(
     keyBoardActions: KeyboardActions = KeyboardActions(),
     isEnabled: Boolean = true
 ) {
-    Row {
-        Text("Nome completo")
-    }
-
-    Row {
         OutlinedTextField(
             modifier = modifier.fillMaxWidth(),
             value = text,
@@ -46,5 +60,4 @@ fun AppTextField(
                 disabledTextColor = Color.Black
             )
         )
-    }
 }

@@ -5,11 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.compose.ui.Modifier
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.bankapp.components.AppTextField
+import com.example.bankapp.components.FormVelox
 import com.example.bankapp.databinding.FragmentVeloxFormBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -46,7 +44,7 @@ class VeloxFormFragment : Fragment() {
         _binding = FragmentVeloxFormBinding.inflate(inflater, container, false)
         val view = binding
         view.composeViewVeloxForm.setContent {
-            AppTextField(modifier = Modifier,"This si a test","Placeholder")
+           FormVelox()
         }
         return view.root
     }

@@ -1,10 +1,16 @@
 package com.example.bankapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.compose.ui.Modifier
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.bankapp.components.AppTextField
+import com.example.bankapp.databinding.FragmentVeloxFormBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,7 +26,10 @@ class VeloxFormFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private var _binding: FragmentVeloxFormBinding? = null
+    private val binding get() = _binding!!
 
+    //region Fragment Life Cycle
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -32,10 +41,35 @@ class VeloxFormFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_velox_form, container, false)
+        _binding = FragmentVeloxFormBinding.inflate(inflater, container, false)
+        val view = binding
+        view.composeViewVeloxForm.setContent {
+            AppTextField(modifier = Modifier,"This si a test","Placeholder")
+        }
+        return view.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.buttonPreviousVeloxForm.setOnClickListener {
+            findNavController().navigate(R.id.action_veloxFormFragment_to_SecondFragment)
+        }
+        binding.buttonNextVeloxForm.setOnClickListener {
+            val toast = Toast.makeText(context, "GOOD STUFF IS HAPPENING BOYZ", Toast.LENGTH_SHORT)
+            toast.show()
+        }
+
+    }
+
+    //endregion
+
+    //region Init View Components
+
+
+    //endregion
 
     companion object {
         /**

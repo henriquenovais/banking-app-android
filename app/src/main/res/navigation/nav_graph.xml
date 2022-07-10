@@ -24,5 +24,17 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_veloxFormFragment"
+            app:destination="@id/veloxFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/veloxFormFragment"
+        android:name="com.example.bankapp.VeloxFormFragment"
+        android:label="fragment_velox_form"
+        tools:layout="@layout/fragment_velox_form" >
+        <action
+            android:id="@+id/action_veloxFormFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
 </navigation>

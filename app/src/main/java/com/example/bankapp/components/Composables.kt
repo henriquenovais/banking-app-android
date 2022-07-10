@@ -1,5 +1,8 @@
 package com.example.bankapp.components
 
-class Composables {
+import androidx.compose.runtime.Composable
+
+@Composable
+fun composableStuff (){
 
 }

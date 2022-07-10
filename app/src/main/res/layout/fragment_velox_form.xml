@@ -7,7 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".VeloxFormFragment">
 
+    <androidx.compose.ui.platform.ComposeView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/form_navigation_buttons">
+    </androidx.compose.ui.platform.ComposeView>
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/form_navigation_buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

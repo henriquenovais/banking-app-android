@@ -16,3 +16,4 @@ rootProject.name = "Bank App"
 include ':app'
 include ':lifeinsuranceflow'
 include ':utils'
+include ':homeflow'

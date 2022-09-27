@@ -28,8 +28,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion "$kotlin_compiler_ext_version"
+    }
     buildFeatures {
         viewBinding true
+        compose true
     }
 }
 
@@ -68,25 +72,32 @@ dependencies {
 
     //endregion
 
+    //region UI Tests
+
+    // UI Tests
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+
+    //endregion
+
     //region Jetpack Compose
 
-    implementation 'androidx.compose.ui:ui:1.1.1'
+    implementation "androidx.compose.ui:ui:$compose_version"
     // Tooling support (Previews, etc.)
-    implementation 'androidx.compose.ui:ui-tooling:1.1.1'
+    implementation "androidx.compose.ui:ui-tooling:$compose_version"
     // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
-    implementation 'androidx.compose.foundation:foundation:1.1.1'
+    implementation "androidx.compose.foundation:foundation:$compose_version"
     // Material Design
-    implementation 'androidx.compose.material:material:1.1.1'
+    implementation "androidx.compose.material:material:$compose_version"
     // Material design icons
-    implementation 'androidx.compose.material:material-icons-core:1.1.1'
-    implementation 'androidx.compose.material:material-icons-extended:1.1.1'
-    // Integration with activities
-    implementation 'androidx.activity:activity-compose:1.4.0'
-    // Integration with ViewModels
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1'
+    implementation "androidx.compose.material:material-icons-core:$compose_version"
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
     // Integration with observables
-    implementation 'androidx.compose.runtime:runtime-livedata:1.1.1'
-    implementation 'androidx.compose.runtime:runtime-rxjava2:1.1.1'
+    implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
+    implementation "androidx.compose.runtime:runtime-rxjava2:$compose_version"
+    // Integration with activities
+    implementation "androidx.activity:activity-compose:$compose_activity_integration_version"
+    // Integration with ViewModels
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$compose_viewmodel_integration_version"
 
     //endregion
 

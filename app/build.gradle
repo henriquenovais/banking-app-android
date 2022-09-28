@@ -33,7 +33,6 @@ android {
 
 dependencies {
 
-    implementation project(':lifeinsuranceflow')
     implementation project(':homeflow')
     implementation project(':utils')
 

@@ -1,6 +1,8 @@
 package com.example.bankapp
 
 import android.app.Application
+import com.example.data.di.dataModule
+import com.example.domain.di.domainModule
 import com.example.homeflow.di.homeFlowModule
 import com.example.utils.di.utilsModule
 import org.koin.android.ext.koin.androidContext
@@ -20,7 +22,9 @@ class App : Application(){
     companion object {
         val KOIN_MODULES = listOf(
             homeFlowModule,
-            utilsModule
+            utilsModule,
+            domainModule,
+            dataModule
         )
     }
 }

@@ -3,6 +3,6 @@ Generic app created in order to experiment with the lastest UI created by financ
 
 ## Proposed color pallete
 - Black: 040303
-- Golden Yellow: FFDE0A
+- Old Gold: CCB400
 - Silver Chalice: ACAEA9
 

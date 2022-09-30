@@ -14,6 +14,7 @@ buildscript {
         compose_activity_integration_version="1.5.1"
         compose_viewmodel_integration_version="2.5.1"
         mockkVersion="1.13.2"
+        lottieVersion = "3.4.0"
     }
 }
 

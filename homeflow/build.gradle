@@ -104,6 +104,10 @@ dependencies {
 
     //endregion
 
+    //region Lottie/Animation
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    //endregion
+
     //region Retrofit 2
     implementation "com.squareup.retrofit2:retrofit:$retrofit2_version"
     //endregion

@@ -10,7 +10,12 @@
         <item name="colorSecondaryVariant">@color/old_gold_darker</item>
         <item name="colorOnSecondary">@color/black_darker</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:layout">@layout/activity_splash</item>
+        <item name="android:statusBarColor">@color/black_darker</item>
     </style>
 </resources>

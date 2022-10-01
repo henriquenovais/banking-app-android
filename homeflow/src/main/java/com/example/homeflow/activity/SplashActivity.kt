@@ -1,14 +1,15 @@
 package com.example.homeflow.activity
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.homeflow.R
 
-class MainActivity : AppCompatActivity() {
+@SuppressLint("CustomSplashScreen")
+class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        Thread.sleep(3000)
-        setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
     }
 }

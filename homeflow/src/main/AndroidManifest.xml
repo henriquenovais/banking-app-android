@@ -24,7 +24,8 @@
         </activity>
         <activity
             android:name=".activity.HomeActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

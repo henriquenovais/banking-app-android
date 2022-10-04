@@ -1,6 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Theme.HomeFlow" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.HomeFlow" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/black_darker</item>
@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:layout">@layout/activity_splash</item>
         <item name="android:statusBarColor">@color/black_darker</item>
     </style>

@@ -7,8 +7,6 @@ import com.example.homeflow.R
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
-        Thread.sleep(3000)
         setContentView(R.layout.activity_home)
     }
 }

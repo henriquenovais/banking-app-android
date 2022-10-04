@@ -11,8 +11,8 @@ import com.example.homeflow.R
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
-    val mainActivityIntent by lazy {
-        Intent(this, MainActivity::class.java)
+    private val homeActivityIntent by lazy {
+        Intent(this, HomeActivity::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +21,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(mainActivityIntent)
+            startActivity(homeActivityIntent)
             finish()
         }, 2000)
     }

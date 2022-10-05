@@ -7,18 +7,20 @@
     tools:context=".activity.HomeActivity">
 
     <include layout="@layout/toolbar_home"
+        android:id="@+id/toolbar_home"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent">
     </include>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_home_flow"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_home"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.fragment.app.FragmentContainerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

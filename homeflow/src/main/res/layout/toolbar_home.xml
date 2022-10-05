@@ -5,14 +5,15 @@
     android:id="@+id/my_toolbar"
     android:layout_width="match_parent"
     android:layout_height="@dimen/spacing_80dp"
-    android:background="?attr/colorPrimary"
-    android:elevation="@dimen/elevation_4dp"
+    android:background="@color/black_lighter"
+    android:elevation="@dimen/spacing_16dp"
     android:theme="@style/Theme.HomeFlow"
     app:popupTheme="@style/Theme.HomeFlow">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/constraint_layout_toolbar_home">
 
         <ImageView
             android:id="@+id/toolbar_icon_personal_information"

@@ -6,9 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/spacing_80dp"
     android:background="@color/black_lighter"
-    android:elevation="@dimen/spacing_16dp"
-    android:theme="@style/Theme.HomeFlow"
-    app:popupTheme="@style/Theme.HomeFlow">
+    android:elevation="@dimen/spacing_8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

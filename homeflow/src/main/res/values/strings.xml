@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Any Bank</string>
+    <string name="refer_a_friend_icon">Refer a friend icon</string>
+    <string name="access_help_center_icon">Access help center icon</string>
+    <string name="show_amounts_icon">Show amounts icon</string>
+    <string name="profile_information_icon">Profile information icon</string>
 </resources>

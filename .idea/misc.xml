@@ -24,6 +24,8 @@
         <entry key="homeflow/src/main/res/layout/fragment_home.xml" value="0.1859375" />
         <entry key="homeflow/src/main/res/layout/toolbar_home.xml" value="0.5" />
         <entry key="homeflow/src/main/res/menu/menu_main.xml" value="0.18697916666666667" />
+        <entry key="homeflow/src/main/res/mipmap-anydpi-v26/ic_any_bank.xml" value="0.1935" />
+        <entry key="homeflow/src/main/res/mipmap-anydpi-v26/ic_help_center_round.xml" value="0.1935" />
         <entry key="lifeinsuranceflow/src/main/res/layout/content_main.xml" value="0.3625" />
       </map>
     </option>

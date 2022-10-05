@@ -3,6 +3,9 @@
     <dimen name="size_2sp">2sp</dimen>
     <dimen name="size_4sp">4sp</dimen>
 
+    <dimen name="elevation_4dp">4dp</dimen>
+
+    <dimen name="spacing_0dp">0dp</dimen>
     <dimen name="spacing_8dp">8dp</dimen>
     <dimen name="spacing_16dp">16dp</dimen>
     <dimen name="spacing_24dp">24dp</dimen>
@@ -10,4 +13,5 @@
     <dimen name="spacing_40dp">40dp</dimen>
     <dimen name="spacing_48dp">48dp</dimen>
     <dimen name="spacing_56dp">56dp</dimen>
+    <dimen name="spacing_80dp">80dp</dimen>
 </resources>

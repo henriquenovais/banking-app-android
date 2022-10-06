@@ -3,16 +3,22 @@
     <style name="AnyBank.Header1" parent="TextAppearance.AppCompat.Display1">
         <item name="android:textColor">@color/old_gold</item>
         <item name="android:textSize">32sp</item>
-        <item name="android:fontFamily">serif-monospace</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="AnyBank.Body1" parent="TextAppearance.AppCompat.Display1">
-        <item name="android:textColor">@color/old_gold</item>
-        <item name="android:textSize">32sp</item>
-        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:fontFamily">@font/lato_black</item>
         <item name="android:textStyle">normal</item>
     </style>
 
+    <style name="AnyBank.Body1" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/old_gold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AnyBank.HeaderFancy1" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/italianno</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
 </resources>

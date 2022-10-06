@@ -12,6 +12,8 @@
         <entry key="app/src/main/res/layout/velox_form.xml" value="0.359375" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.33" />
         <entry key="homeflow/src/main/res/drawable-anydpi/ic_any_bank.xml" value="0.1945" />
+        <entry key="homeflow/src/main/res/drawable/background_rounded_corner_040303.xml" value="0.194" />
+        <entry key="homeflow/src/main/res/drawable/background_rounded_corners_040303.xml" value="0.1935" />
         <entry key="homeflow/src/main/res/drawable/ic_any_bank_background.xml" value="0.1935" />
         <entry key="homeflow/src/main/res/drawable/ic_any_bank_foreground.xml" value="0.194" />
         <entry key="homeflow/src/main/res/drawable/ic_coins.xml" value="0.194" />
@@ -24,6 +26,7 @@
         <entry key="homeflow/src/main/res/layout/content_main.xml" value="0.2" />
         <entry key="homeflow/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="homeflow/src/main/res/layout/fragment_home.xml" value="0.15" />
+        <entry key="homeflow/src/main/res/layout/partial_checking_account_panel.xml" value="0.33" />
         <entry key="homeflow/src/main/res/layout/toolbar_home.xml" value="0.49732047159699894" />
         <entry key="homeflow/src/main/res/menu/menu_main.xml" value="0.18697916666666667" />
         <entry key="homeflow/src/main/res/mipmap-anydpi-v26/ic_any_bank.xml" value="0.1935" />

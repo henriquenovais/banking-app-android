@@ -14,4 +14,9 @@
     <dimen name="spacing_48dp">48dp</dimen>
     <dimen name="spacing_56dp">56dp</dimen>
     <dimen name="spacing_80dp">80dp</dimen>
+
+    <dimen name="other_1dp">1dp</dimen>
+    <dimen name="other_2dp">2dp</dimen>
+    <dimen name="other_3dp">3dp</dimen>
+    <dimen name="other_4dp">4dp</dimen>
 </resources>

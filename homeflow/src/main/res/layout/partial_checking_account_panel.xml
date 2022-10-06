@@ -8,48 +8,49 @@
 
     <TextView
         android:id="@+id/tv_checking_account"
+        style="@style/AnyBank.Header1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_rounded_corners_2e2e2e"
-        android:text="Conta"
-        android:textColor="@color/old_gold"
-        android:textStyle="bold"
-        android:layout_marginTop="@dimen/spacing_16dp"
         android:layout_marginStart="@dimen/spacing_16dp"
+        android:layout_marginTop="@dimen/spacing_16dp"
+        android:background="@drawable/background_rounded_corners_2e2e2e"
+        android:text="@string/conta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_balance_checking_account"
+        style="@style/AnyBank.Header1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
         android:background="@drawable/background_rounded_corners_2e2e2e"
         android:text="R$ ${value}"
         android:textColor="@color/old_gold"
         android:textStyle="bold"
-        android:layout_marginTop="@dimen/spacing_8dp"
-        android:layout_marginStart="@dimen/spacing_16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_checking_account" />
 
     <HorizontalScrollView
         android:id="@+id/horizontal_scroll_checking_account_operations"
-        app:layout_constraintTop_toBottomOf="@id/tv_balance_checking_account"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black_lighter">
+        android:background="@color/black_lighter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_balance_checking_account">
 
         <TextView
+            style="@style/AnyBank.Header1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_16dp"
+            android:layout_marginTop="@dimen/spacing_8dp"
             android:background="@drawable/background_rounded_corners_2e2e2e"
             android:text="THIS SHOULD BECOME A REALLY GOOD HORIZONTAL SCROLL SOON ENOUGH GUYS REALLY BIG MESSAGE HERE"
             android:textColor="@color/old_gold"
             android:textStyle="bold"
-            android:layout_marginTop="@dimen/spacing_8dp"
-            android:layout_marginStart="@dimen/spacing_16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent" />
 
@@ -57,33 +58,34 @@
 
     <ImageView
         android:id="@+id/button_cards"
-        app:layout_constraintTop_toBottomOf="@id/horizontal_scroll_checking_account_operations"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@drawable/background_rounded_corner_040303">
+        android:background="@drawable/background_rounded_corner_040303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_scroll_checking_account_operations">
 
     </ImageView>
 
     <HorizontalScrollView
         android:id="@+id/horizontal_scroll_financial_opportunities"
-        app:layout_constraintTop_toBottomOf="@id/button_cards"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black_lighter">
+        android:background="@color/black_lighter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_cards">
 
         <TextView
+            style="@style/AnyBank.Header1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_16dp"
+            android:layout_marginTop="@dimen/spacing_8dp"
             android:background="@drawable/background_rounded_corners_2e2e2e"
             android:text="THIS SHOULD BECOME A REALLY GOOD HORIZONTAL SCROLL SOON ENOUGH GUYS REALLY BIG MESSAGE HERE"
             android:textColor="@color/old_gold"
             android:textStyle="bold"
-            android:layout_marginTop="@dimen/spacing_8dp"
-            android:layout_marginStart="@dimen/spacing_16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent" />
 

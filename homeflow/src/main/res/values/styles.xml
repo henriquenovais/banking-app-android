@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="TextAppearanceDisplay1" parent="TextAppearance.AppCompat.Display1">
+    <style name="AnyBank.Header1" parent="TextAppearance.AppCompat.Display1">
         <item name="android:textColor">@color/old_gold</item>
-        <item name="android:textSize">@dimen/size_4sp</item>
-        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AnyBank.Body1" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/old_gold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textStyle">normal</item>
     </style>
 
 

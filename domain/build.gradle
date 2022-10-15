@@ -61,4 +61,17 @@ dependencies {
     implementation "io.insert-koin:koin-androidx-compose:$koin_version"
 
     //endregion
+
+    //region MockK
+
+    //Unit testing
+    testImplementation "io.mockk:mockk-android:${mockkVersion}"
+    testImplementation "io.mockk:mockk-agent:${mockkVersion}"
+
+    //Instrumented testing
+
+    androidTestImplementation "io.mockk:mockk-android:${mockkVersion}"
+    androidTestImplementation "io.mockk:mockk-agent:${mockkVersion}"
+
+    //endregion
 }

@@ -1,0 +1,64 @@
+{
+  "operation_buttons": [
+    {
+      "title": "Área PIX",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "content_description": "[Botão]Toque para menu de transações PIX"
+    },
+    {
+      "title": "Pagar",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "description": "[Botão]Toque para pagamentos de boleto"
+    },
+    {
+      "title": "Pegar Emprestado",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "description": "[Botão]Toque para empréstimos"
+    },
+    {
+      "title": "Transferir",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "description": "[Botão]Toque para realizar uma transferência"
+    },
+    {
+      "title": "Depositar",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "description": "[Botão]Toque para realizar um depósito"
+    },
+    {
+      "title": "Recarga de celular",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "description": "[Botão]Toque para realizar recarga de celular"
+    },
+    {
+      "title": "Cobrar",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "description": "[Botão]Toque para gerar boletos"
+    },
+    {
+      "title": "Doação",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "description": "[Botão]Toque para realizar doação"
+    },
+    {
+      "title": "Transferir Internac.",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "description": "[Botão]Toque para realizar transferência internacional"
+    },
+    {
+      "title": "Investir",
+      "icon": "#$90812",
+      "background_color": "#FFFFFF",
+      "description": "[Botão]Toque para investir"
+    }
+  ]
+}

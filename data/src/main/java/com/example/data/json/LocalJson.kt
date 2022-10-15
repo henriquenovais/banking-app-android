@@ -4,12 +4,15 @@ import java.io.BufferedReader
 import java.io.FileReader
 
 class LocalJson {
+    lateinit var bufferedReader: BufferedReader
+
+
     fun readJsonFile(path: String): String {
         var jsonText = ""
         var line: String
 
         try {
-            val bufferedReader = BufferedReader(FileReader(path))
+            bufferedReader = BufferedReader(FileReader(path))
 
             while (bufferedReader.readLine() != null) {
                 line = bufferedReader.readLine()

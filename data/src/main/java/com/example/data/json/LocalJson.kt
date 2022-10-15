@@ -1,21 +1,9 @@
-package com.example.utils.json
+package com.example.data.json
 
 import java.io.BufferedReader
 import java.io.FileReader
 
-fun main(args: Array<String>) {
-    val jsonParser = JsonParser()
-    var result: String = ""
-    try {
-        result =
-            jsonParser.readJsonFileRecursive("utils/src/main/assets/get_checking_account_panel_component_configuration.json")
-    } catch (e: java.lang.Exception) {
-        e.printStackTrace()
-    }
-    println(result)
-}
-
-class JsonParser {
+class LocalJson {
     fun readJsonFile(path: String): String {
         var jsonText = ""
         var line: String
@@ -50,8 +38,5 @@ class JsonParser {
 
         return go(bufferedReader)
     }
+
 }
-
-
-
-

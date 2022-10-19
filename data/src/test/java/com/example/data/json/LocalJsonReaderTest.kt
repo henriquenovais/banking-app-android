@@ -1,27 +1,14 @@
 package com.example.data.json
 
 import io.mockk.MockKAnnotations
-import io.mockk.every
 import io.mockk.impl.annotations.MockK
-import io.mockk.spyk
-import io.mockk.verify
-import org.junit.Assert.assertThrows
 import org.junit.Before
 import org.junit.Test
 import java.io.BufferedReader
 import java.io.File
 import java.io.FileNotFoundException
-import java.io.FileReader
 import kotlin.test.assertFailsWith
 import kotlin.test.assertTrue
-
-//fun main(args: Array<String>) {
-//    //Arrange
-//    val fakeBugJsonAbsolutePath = LocalJsonReaderTest.projectAbsolutePath + LocalJsonReaderTest.FAKE_BUG_JSON_RELATIVE_PATH
-//
-//    //Act
-//    val result = localJsonReader.readJsonFileRecursive(fakeBugJsonAbsolutePath)
-//}
 
 class LocalJsonReaderTest {
 

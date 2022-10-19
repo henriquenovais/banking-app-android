@@ -6,6 +6,8 @@ import java.io.FileReader
 class LocalJsonReader(private var bufferedReaderWithFilePath: BufferedReader) {
 
     fun readJsonFile(path: String): String {
+        //this algorithm is still not ideal since it uses try catch
+        //TODO: improve algorithm as an exercise with loops
         bufferedReaderWithFilePath = BufferedReader(FileReader(path))
         var jsonText = ""
         var line: String

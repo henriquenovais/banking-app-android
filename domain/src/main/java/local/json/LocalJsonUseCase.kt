@@ -1,6 +1,4 @@
-package json
-
-import com.example.data.json.LocalJsonRepository
+package local.json
 
 interface LocalJsonUseCase {
     fun useLocalJson(path: String) : String

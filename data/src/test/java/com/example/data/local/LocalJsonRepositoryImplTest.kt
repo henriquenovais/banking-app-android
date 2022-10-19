@@ -1,5 +1,6 @@
-package com.example.data.json
+package com.example.data.local
 
+import com.example.data.local.json.LocalJsonRepositoryImpl
 import io.mockk.MockKAnnotations
 import io.mockk.impl.annotations.MockK
 import org.junit.Before

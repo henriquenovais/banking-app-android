@@ -1,9 +1,11 @@
-package com.example.data.json
+package com.example.data.local.json
 
+import com.example.data.local.json.LocalJsonRepository
 import java.io.BufferedReader
 import java.io.FileReader
 
-class LocalJsonRepositoryImpl(private var bufferedReaderWithFilePath: BufferedReader) : LocalJsonRepository{
+class LocalJsonRepositoryImpl(private var bufferedReaderWithFilePath: BufferedReader) :
+    LocalJsonRepository {
 
     //TODO: Remove after architecture PoC
     override fun reallyCoolTestMethod(): String {

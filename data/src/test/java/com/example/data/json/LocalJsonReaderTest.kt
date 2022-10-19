@@ -38,9 +38,8 @@ class LocalJsonReaderTest {
 
     @Before
     fun testSetup() {
-        localJsonReader.setJsonFilePath(fakeJsonAbsolutePath)
-        every {mBufferedReader.readLine()} returns "this"
         MockKAnnotations.init(this, relaxed = true)
+        localJsonReader.setJsonFilePath(fakeJsonAbsolutePath)
     }
 
     @Test
@@ -49,7 +48,6 @@ class LocalJsonReaderTest {
 
         //Act
         val result = localJsonReader.readJsonFile()
-        println(result)
 
         //Assert
         assertTrue(result.contains(FAKE_JSON_CONTENT))

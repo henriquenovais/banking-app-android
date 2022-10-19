@@ -5,29 +5,25 @@ import io.mockk.every
 import io.mockk.impl.annotations.MockK
 import io.mockk.spyk
 import io.mockk.verify
+import org.junit.Assert.assertThrows
 import org.junit.Before
 import org.junit.Test
 import java.io.BufferedReader
 import java.io.File
+import java.io.FileNotFoundException
 import java.io.FileReader
+import kotlin.test.assertFailsWith
 import kotlin.test.assertTrue
 
 //fun main(args: Array<String>) {
-//    val fakeJsonRelativePath = "/data/src/main/assets/test.json"
+//    //Arrange
+//    val fakeBugJsonAbsolutePath = LocalJsonReaderTest.projectAbsolutePath + LocalJsonReaderTest.FAKE_BUG_JSON_RELATIVE_PATH
 //
-//    //val file = File("").absolutePath
-//    val projectAbsolutePath = File("").absolutePath
-//    val testJsonAbsolutePath = projectAbsolutePath + fakeJsonRelativePath
-//    println(testJsonAbsolutePath)
-//
-//    val localJsonReader = LocalJsonReader()
-//    val result = localJsonReader.readJsonFileRecursive(testJsonAbsolutePath)
-//    println(result)
+//    //Act
+//    val result = localJsonReader.readJsonFileRecursive(fakeBugJsonAbsolutePath)
 //}
 
 class LocalJsonReaderTest {
-
-    private val fakeJsonAbsolutePath = projectAbsolutePath + FAKE_JSON_RELATIVE_PATH
 
     @MockK
     lateinit var mBufferedReader: BufferedReader
@@ -39,15 +35,15 @@ class LocalJsonReaderTest {
     @Before
     fun testSetup() {
         MockKAnnotations.init(this, relaxed = true)
-        localJsonReader.setJsonFilePath(fakeJsonAbsolutePath)
     }
 
     @Test
     fun readJsonFile() {
         //Arrange
+        val fakeJsonAbsolutePath = projectAbsolutePath + FAKE_JSON_RELATIVE_PATH
 
         //Act
-        val result = localJsonReader.readJsonFile()
+        val result = localJsonReader.readJsonFile(fakeJsonAbsolutePath)
 
         //Assert
         assertTrue(result.contains(FAKE_JSON_CONTENT))
@@ -56,17 +52,30 @@ class LocalJsonReaderTest {
     @Test
     fun readJsonFileRecursive() {
         //Arrange
+        val fakeJsonAbsolutePath = projectAbsolutePath + FAKE_JSON_RELATIVE_PATH
 
         //Act
-        val result = localJsonReader.readJsonFileRecursive()
+        val result = localJsonReader.readJsonFileRecursive(fakeJsonAbsolutePath)
 
         //Assert
         assertTrue(result.contains(FAKE_JSON_CONTENT))
     }
 
+    @Test
+    fun readJsonFileRecursiveHaha() {
+        //Arrange
+        val fakeBugJsonAbsolutePath = projectAbsolutePath + FAKE_BUG_JSON_RELATIVE_PATH
+
+        //Act
+
+        //Assert
+        assertFailsWith(FileNotFoundException::class){ localJsonReader.readJsonFileRecursive(fakeBugJsonAbsolutePath) }
+    }
+
     companion object {
-        private val projectAbsolutePath = File("").absolutePath
-        private const val FAKE_JSON_RELATIVE_PATH = "/src/main/assets/test.json"
+        val projectAbsolutePath = File("").absolutePath
+        const val FAKE_JSON_RELATIVE_PATH = "/src/main/assets/test.json"
+        const val FAKE_BUG_JSON_RELATIVE_PATH = "/src/main/assets/bugtest.json"
 
         private const val FAKE_JSON_CONTENT = "{\n" +
                 "  \"operation_buttons\": [\n" +

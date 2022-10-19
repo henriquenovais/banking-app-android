@@ -5,11 +5,8 @@ import java.io.FileReader
 
 class LocalJsonReader(private var bufferedReaderWithFilePath: BufferedReader) {
 
-    fun setJsonFilePath(path: String) {
+    fun readJsonFile(path: String): String {
         bufferedReaderWithFilePath = BufferedReader(FileReader(path))
-    }
-
-    fun readJsonFile(): String {
         var jsonText = ""
         var line: String
 
@@ -30,8 +27,7 @@ class LocalJsonReader(private var bufferedReaderWithFilePath: BufferedReader) {
         return jsonText
     }
 
-    fun readJsonFileRecursive(): String {
-
+    fun readJsonFileRecursive(path: String): String {
         fun go(jsonText: String = ""): String {
             val newString = bufferedReaderWithFilePath.readLine()
             return if (newString == null) {
@@ -41,14 +37,8 @@ class LocalJsonReader(private var bufferedReaderWithFilePath: BufferedReader) {
             }
         }
 
-        val result = try {
-            go()
-        } catch (e: Exception) {
-            e.printStackTrace()
-            "error"
-        }
-
-        return result
+        bufferedReaderWithFilePath = BufferedReader(FileReader(path))
+        return go()
     }
 
 }

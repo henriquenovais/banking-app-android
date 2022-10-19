@@ -10,13 +10,13 @@ import java.io.FileNotFoundException
 import kotlin.test.assertFailsWith
 import kotlin.test.assertTrue
 
-class LocalJsonReaderTest {
+class LocalJsonRepositoryImplTest {
 
     @MockK
     lateinit var mBufferedReader: BufferedReader
 
-    private val localJsonReader by lazy {
-        LocalJsonReader(mBufferedReader)
+    private val localJsonRepositoryImpl by lazy {
+        LocalJsonRepositoryImpl(mBufferedReader)
     }
 
     @Before
@@ -30,7 +30,7 @@ class LocalJsonReaderTest {
         val fakeJsonAbsolutePath = projectAbsolutePath + FAKE_JSON_RELATIVE_PATH
 
         //Act
-        val result = localJsonReader.readJsonFile(fakeJsonAbsolutePath)
+        val result = localJsonRepositoryImpl.readJsonFile(fakeJsonAbsolutePath)
 
         //Assert
         assertTrue(result.contains(FAKE_JSON_CONTENT))
@@ -42,7 +42,7 @@ class LocalJsonReaderTest {
         val fakeJsonAbsolutePath = projectAbsolutePath + FAKE_JSON_RELATIVE_PATH
 
         //Act
-        val result = localJsonReader.readJsonFileRecursive(fakeJsonAbsolutePath)
+        val result = localJsonRepositoryImpl.readJsonFile(fakeJsonAbsolutePath)
 
         //Assert
         assertTrue(result.contains(FAKE_JSON_CONTENT))
@@ -56,7 +56,7 @@ class LocalJsonReaderTest {
         //Act
 
         //Assert
-        assertFailsWith(FileNotFoundException::class){ localJsonReader.readJsonFileRecursive(fakeBugJsonAbsolutePath) }
+        assertFailsWith(FileNotFoundException::class){ localJsonRepositoryImpl.readJsonFile(fakeBugJsonAbsolutePath) }
     }
 
     companion object {
